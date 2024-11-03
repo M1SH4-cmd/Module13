@@ -14,12 +14,6 @@ vector<int> eraseElements(vector<int> vec, int x){
     return vec;
 }
 
-vector<int> eraseElementsVol2(vector<int> vec, int x){
-
-
-    
-}
-
 
 int main(){
     int n;
