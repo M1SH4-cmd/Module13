@@ -16,7 +16,7 @@ int main() {
         }
     }
 
-    cout << "Суммарная стоимость будет равна " << totalCost << "." << endl;
+    cout << "Total cost:\t" << totalCost << endl;
 
     return 0;
 }
