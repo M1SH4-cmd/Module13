@@ -4,18 +4,17 @@
 using namespace std;
 
 vector<int> removeElement(vector<int> vec, int x) {
-    vector<int> result = vec;
-
-    for (int i = 0; i < result.size(); ) {
-        if (result[i] == x) {
-            result.pop_back();
-            result.resize(result.size() - 1);
-        } else {
-            i++;
+    for (int i = 0 ; i < vec.size(); ++i) {
+        if (vec[i] == x) {
+            for (int j = i; j < vec.size() - 1; ++j) {
+                vec[j] = vec[j + 1];
+            }
+            vec.pop_back();
+            i -= 1;
         }
     }
 
-    return result;
+    return vec;
 }
 
 int main() {
